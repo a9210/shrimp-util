@@ -7,8 +7,3 @@ function get {
         EVAL_STR="echo \$\{${1}\}"
         eval echo '${'${1}'}'
 }
-put "this_is_key" "value"
-put "natsume" "souseki"
-echo ${this_is_key}
-get "this_is_key"
-get "natsume"
