@@ -1,6 +1,7 @@
 #!/bin/bash
 source ../Assert.sh
 
+echo "======== $0 ========"
 NUM_OF_OK=0
 NUM_OF_NG=0
 
