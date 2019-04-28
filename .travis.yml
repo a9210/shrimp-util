@@ -1,6 +1,6 @@
 language: bash
 before_install:
-  - sudo apt install shellcheck
+  - sudo apt-get install shellcheck
 script: 
   - test/TestAll.sh
   - shellcheck *.sh || exit 0
