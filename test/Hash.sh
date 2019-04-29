@@ -1,6 +1,6 @@
 #!/bin/bash
-source ../Assert.sh
-source ../Hash.sh
+source ./Assert.sh
+source ./Hash.sh
 
 echo "======== $0 ========"
 
