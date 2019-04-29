@@ -6,16 +6,16 @@ function assert {
         if [ "${1}" == "${2}" ]
         then
                 echo -e "\033[42mASSERT OK:[${1}]\033[m"
-                NUM_OF_OK=$((${NUM_OF_OK} + 1))
+                NUM_OF_OK=$((NUM_OF_OK + 1))
                 return 0
         else
                 echo -e "\033[41mASSERT NG:[${1}][${2}]\033[m"
-                NUM_OF_NG=$((${NUM_OF_NG} + 1))
+                NUM_OF_NG=$((NUM_OF_NG + 1))
                 return 1
         fi
 }
 function summary() {
-    local NUM_OF_CASE=$((${NUM_OF_NG} + ${NUM_OF_OK}))
+    local NUM_OF_CASE=$((NUM_OF_NG + NUM_OF_OK))
     if [ "${NUM_OF_NG}" != 0 ]
     then
         echo -e -n "\033[41m"
