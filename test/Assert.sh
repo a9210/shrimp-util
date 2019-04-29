@@ -1,5 +1,5 @@
 #!/bin/bash
-source ../Assert.sh
+source ./Assert.sh
 
 echo "======== $0 ========"
 NUM_OF_OK=0
