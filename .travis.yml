@@ -3,6 +3,8 @@ before_install:
   - sudo apt-get install shellcheck
   - git clone --depth 1 --single-branch -b develop https://github.com/a9210/shrimp
   - export PATH="${PATH}:"$(cd ./shrimp;pwd)
+  - mkfifo test;rm test
 script: 
+  - mkfifo test;rm test
   - test/TestAll.sh
   - shellcheck *.sh || exit 0
