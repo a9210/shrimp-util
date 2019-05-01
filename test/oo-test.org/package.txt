@@ -1,0 +1,2 @@
+[default]
+shrimp-util shrimp-util https://github.com/a9210/shrimp-util develop
