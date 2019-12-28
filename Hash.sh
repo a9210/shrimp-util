@@ -1,7 +1,7 @@
 #!/bin/bash
 function put {
     EVAL_STR="${1}=\"${2}\""
-    eval ${EVAL_STR}
+    eval "${EVAL_STR}"
 }
 function get {
     EVAL_STR="echo \$\{${1}\}"
